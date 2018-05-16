@@ -1,0 +1,44 @@
+{
+  "name": "silverbird-scrape",
+  "version": "1.0.0",
+  "description": "Utility to scrape Silverbird Cinemas website and return data as JSON",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "prepublishOnly": "./node_modules/.bin/babel ./src -d ./dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oddoye-david/silverbird-scrape.git"
+  },
+  "keywords": [
+    "silverbird",
+    "scrape"
+  ],
+  "author": "David Oddoye <oddoyedavid@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oddoye-david/silverbird-scrape/issues"
+  },
+  "homepage": "https://github.com/oddoye-david/silverbird-scrape#readme",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-jest": "22.4.3",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.11.0",
+    "jest": "22.4.3",
+    "rimraf": "2.6.2"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "cheerio": "0.22.0",
+    "random-ua": "0.0.6"
+  },
+  "files": [
+    "dist"
+  ]
+}
